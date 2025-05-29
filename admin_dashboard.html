@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-buttons button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Admin Dashboard</h1>
+    <div class="nav-buttons">
+        <button id="mensAdminBtn">Mens Wear Admin</button>
+        <button id="womensAdminBtn">Womens Wear Admin</button>
+        <button id="kidsBoysAdminBtn">Kids Boys Wear Admin</button>
+        <button id="kidsGirlsAdminBtn">Kids Girls Wear Admin</button>
+    </div>
+
+    <script>
+        document.getElementById('mensAdminBtn').addEventListener('click', () => {
+            window.location.href = 'mens_admin.html';
+        });
+        document.getElementById('womensAdminBtn').addEventListener('click', () => {
+            window.location.href = 'womens_admin.html';
+        });
+        document.getElementById('kidsBoysAdminBtn').addEventListener('click', () => {
+            window.location.href = 'kids_boys_admin.html';
+        });
+        document.getElementById('kidsGirlsAdminBtn').addEventListener('click', () => {
+            window.location.href = 'kids_girls_admin.html';
+        });
+    </script>
+</body>
+
+</html>
